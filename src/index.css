@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(182, 233, 233);
+  padding: 9px;
+}
+
+nav input {
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+nav button {
+  width: 70px;
+  height: 38px;
+  background-color: rgb(134, 102, 170);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 11px;
+  list-style: none;
+}
+
+
+.categoryBtn {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.categoryBtn button {
+  width: 130px;
+  height: 40px; /* Slightly increased height for a more spacious feel */
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+  background: linear-gradient(45deg, #ff6a6a, #e46f6f); /* Gradient background */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden; /* For the hover effect */
+}
+
+.head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  color: #e46f6f; /* Vibrant color matching the buttons */
+  letter-spacing: 1.5px; /* Slight letter spacing for elegance */
+  text-transform: uppercase; /* Makes text stand out more */
+  margin: 0 auto 20px auto; /* Centers horizontally with margin below */
+  position: relative;
+  display: inline-block; /* Necessary for the ::after element and centering */
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+
+.head::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(rgb(41, 110, 121), #6a8f98, #679fb4);
+  border-radius: 2px;
+  transform: scaleX(0); 
+  transition: transform 0.3s ease;
+}
+
+.head:hover::after {
+  transform: scaleX(1);
+}
+
+.head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif;
+  color: #e67070;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto; 
+  position: relative;
+  display: block; 
+  width: fit-content; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+
+.card{
+  width:320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: azure;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(235, 236, 236);
+}
+.card img{
+  width: 100%;
+  height:180px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.cardContainer{
+  justify-content: center;
+  gap:41px;
+  flex-wrap: wrap;
+}
+.card .title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+.card .title:hover{
+  border-bottom: 1px solid black;
+cursor: pointer;
+
+}
+.card .content{
+  padding: 9px;
+}
+.card button{
+  background-color: rgb(29, 162, 214);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height:28px;
+  color: azure;
+  font-size:13px;
+  border-radius: 2px;
+}
+.categoryBtn button{
+  gap:11px;
+  width: 130px;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease; 
+}
+.sidebar{
+  font-weight: 600;
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif;
+  color: #1e1717;
+  font-family: 'Montserrat', sans-serif;  /* Stylish font */
+  font-weight: 700;                       /* Bold weight */
+  font-size: 28px;                        /* Customize size */
+  color: #353321;                         /* Attractive color */
+  letter-spacing: 2px;                    /* Spacing between letters */
+  text-transform: uppercase;              /* Make text uppercase */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* Add text shadow for depth */
+  transition: color 0.3s ease; 
+}
+
+.sidebar:hover {
+  transform: scale(1.1);        /* Slight zoom on hover */
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
